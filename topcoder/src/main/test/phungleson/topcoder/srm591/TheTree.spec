@@ -3,6 +3,7 @@ package phungleson.topcoder.srm591
 import phungleson.topcoder.srm591.TheTree
 
 describe TheTree {
+	describe "#maximumDiameter" {
 		def tests {
 		    |  counts 														|  maximumDiameter  	|
 		    |  	#[3]   														|		2				|
@@ -28,4 +29,5 @@ describe TheTree {
   		}
  
 		fact tests.forEach[subject.maximumDiameter(counts) => maximumDiameter]
+	}
 }
